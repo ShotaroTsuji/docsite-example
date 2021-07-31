@@ -1,0 +1,25 @@
+body,ol,li {
+	margin: 0;
+	padding: 0;
+}
+
+.list-wrapper {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	font-size: 1.2rem;
+
+}
+
+.nav-list {
+	list-style: none outside none;
+	padding-left: 1rem;
+}
+
+.nav-list li {
+	padding: 0.2rem;
+}
+
+.nav-list a {
+	color: var(--sidebar-color);
+	text-decoration-line: none;
+}

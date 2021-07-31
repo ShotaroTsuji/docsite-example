@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="maccha.css" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+		<script src="handler.js"></script>
+		<script src="dispatch.js"></script>
+		<script>
+function receiveMessage(event) {
+				console.log(event);
+				dispatchMessage(event.data);
+}
+window.addEventListener("message", receiveMessage, false);
+window.onload = () => {
+  installHandler(document, window);
+};
+		</script>
+		<title>Page</title>
+	</head>
+	<body>
+		<div class="main" id="main">
+			<nav id="sidebar" class="sidebar">
+				<object data="./navigation.html" type="text/html"></object>
+			</nav>
+			<div id="page" class="page">
+				<div id="menubar" class="menubar">
+					<button class="menubar-button" id="toggle-navigation-button">X</button>
+					<h1 class="menubar-title">Site Title （サイト名）</h1>
+				</div>
+				<main>
+					<h1>Section Title</h1>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>

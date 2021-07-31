@@ -1,0 +1,82 @@
+:root {
+	--menubar-height: 3em;
+}
+
+body, div, nav, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.main {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.sidebar {
+	flex: 1 20em;
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--sidebar-bg-color);
+}
+
+.sidebar-hidden {
+	flex: 0;
+}
+
+.sidebar > object {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.menubar {
+	display: flex;
+	height: var(--menubar-height);
+}
+
+.menubar-button {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	width: var(--menubar-height);
+	background: none;
+	font-size: 1.25em;
+	color: var(--menubar-color);
+}
+
+.menubar-button:hover {
+	color: var(--menubar-button-hover);
+}
+
+.menubar-title {
+	text-align: center;
+	flex: auto;
+	color: var(--menubar-color);
+}
+
+.menubar-title h1 {
+	font-size: 2em;
+}
+
+.page {
+	flex: auto;
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--page-bg-color);
+}
+
+.page > main {
+	margin-top: 1em;
+	min-height: 100vh;
+}
+
+.page > main h1 {
+	text-align: center;
+}
