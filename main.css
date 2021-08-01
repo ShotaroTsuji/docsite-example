@@ -8,22 +8,22 @@ body, div, nav, h1 {
 }
 
 html {
-	height: 100%;
+	min-height: 100vh;
 }
 
 body {
-	height: 100%;
+	min-height: 100vh;
 }
 
 .main {
-	height: 100%;
+	min-height: 100vh;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
 }
 
 .sidebar {
-	flex: 1 20em;
+	flex: 1 max(16em, 15%);
 	background-color: var(--sidebar-bg-color);
 }
 
@@ -41,6 +41,8 @@ body {
 	display: flex;
 	height: var(--menubar-height);
 	border-bottom: 1px solid var(--menubar-border-color);
+	position: fixed:
+	top: 0px;
 }
 
 .menubar-button {
@@ -80,10 +82,13 @@ body {
 	flex: auto;
 	width: 100%;
 	background-color: var(--page-bg-color);
+	color: var(--page-color);
 }
 
 .page > main {
-	margin-top: 1em;
+	margin: auto;
+	max-width: 50em;
+	padding: 2em;
 }
 
 .page > main h1 {

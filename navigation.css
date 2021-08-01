@@ -23,3 +23,7 @@ body,ol,li {
 	color: var(--sidebar-color);
 	text-decoration-line: none;
 }
+
+.nav-list a:hover {
+	color: var(--sidebar-link-hover);
+}

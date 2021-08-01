@@ -1,7 +1,9 @@
 :root {
 	--page-bg-color: #E7EEDD;
+	--page-color: #252000;
 	--sidebar-bg-color: #507050;
 	--sidebar-color: #C0E0C0;
+	--sidebar-link-hover: #4A2300;
 	--menubar-color: #90A090;
 	--menubar-button-hover: var(--sidebar-bg-color);
 	--menubar-border-color: var(--sidebar-bg-color);
