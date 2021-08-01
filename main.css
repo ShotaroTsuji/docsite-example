@@ -1,5 +1,5 @@
 :root {
-	--menubar-height: 3em;
+	--menubar-height: 2.5em;
 }
 
 body, div, nav, h1 {
@@ -9,6 +9,7 @@ body, div, nav, h1 {
 
 html {
 	min-height: 100vh;
+	font-size: 16pt;
 }
 
 body {
@@ -39,9 +40,12 @@ body {
 
 .menubar {
 	display: flex;
+	align-items: stretch;
 	height: var(--menubar-height);
 	border-bottom: 1px solid var(--menubar-border-color);
-	position: fixed:
+	background-color: var(--page-bg-color);
+	position: -webkit-sticky;
+	position: sticky;
 	top: 0px;
 }
 
@@ -51,8 +55,9 @@ body {
 	margin: 0;
 	width: var(--menubar-height);
 	background: none;
-	font-size: 1.25em;
+	font-size: 1em;
 	color: var(--menubar-color);
+	cursor: pointer;
 }
 
 .menubar-button:hover {
@@ -60,22 +65,12 @@ body {
 }
 
 .menubar-title {
+	padding: 0.25em;
 	text-align: center;
 	flex: auto;
 	color: var(--menubar-color);
-}
-
-.menubar-title h1 {
-	font-size: 2em;
-}
-
-.menubar-title a {
-	text-decoration: none;
-	color: var(--menubar-color);
-}
-
-.menubar-title a:visited {
-	color: var(--menubar-color);
+	overflow: hidden;
+	font-size: 1.25em;
 }
 
 .page {
@@ -88,7 +83,13 @@ body {
 .page > main {
 	margin: auto;
 	max-width: 50em;
-	padding: 2em;
+	padding: 2em 4em;
+}
+
+@media screen and (max-width: 812px) {
+	.page > main {
+		padding: 1em 2em;
+	}
 }
 
 .page > main h1 {

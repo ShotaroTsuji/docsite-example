@@ -7,13 +7,9 @@
 		<script src="handler.js"></script>
 		<script src="dispatch.js"></script>
 		<script>
-function receiveMessage(event) {
-				console.log(event);
-				dispatchMessage(event.data);
-}
-window.addEventListener("message", receiveMessage, false);
 window.onload = () => {
   installHandler(document, window);
+	setupDispatcher(window);
 };
 		</script>
 		<title>Page</title>
@@ -26,7 +22,7 @@ window.onload = () => {
 			<div id="page" class="page">
 				<div id="menubar" class="menubar">
 					<button class="menubar-button" id="toggle-navigation-button">X</button>
-					<h1 class="menubar-title"><a href="page.html">Site Title （サイト名）</a></h1>
+					<h1 class="menubar-title">Site Title （サイト名）</h1>
 				</div>
 				<main>
 					<h1>高木貞治「回顧と展望」</h1>

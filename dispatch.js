@@ -5,3 +5,9 @@ function dispatchMessage(msg) {
 		document.getElementById("sidebar").classList.toggle("sidebar-hidden");
 	}
 }
+
+function setupDispatcher(targetWindow) {
+	targetWindow.addEventListener("message", (e) => {
+		dispatchMessage(e.data);
+	}, false);
+}
