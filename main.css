@@ -7,23 +7,23 @@ body, div, nav, h1 {
 	padding: 0;
 }
 
+html {
+	height: 100%;
+}
+
 body {
-	min-height: 100vh;
+	height: 100%;
 }
 
 .main {
+	height: 100%;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
 	align-items: stretch;
-	width: 100%;
-	min-height: 100vh;
 }
 
 .sidebar {
 	flex: 1 20em;
-	width: 100%;
-	min-height: 100vh;
 	background-color: var(--sidebar-bg-color);
 }
 
@@ -31,14 +31,16 @@ body {
 	flex: 0;
 }
 
-.sidebar > object {
+.sidebar-inner {
+	display: block;
 	width: 100%;
-	min-height: 100vh;
+	height: 100%;
 }
 
 .menubar {
 	display: flex;
 	height: var(--menubar-height);
+	border-bottom: 1px solid var(--menubar-border-color);
 }
 
 .menubar-button {
@@ -65,16 +67,23 @@ body {
 	font-size: 2em;
 }
 
+.menubar-title a {
+	text-decoration: none;
+	color: var(--menubar-color);
+}
+
+.menubar-title a:visited {
+	color: var(--menubar-color);
+}
+
 .page {
 	flex: auto;
 	width: 100%;
-	min-height: 100vh;
 	background-color: var(--page-bg-color);
 }
 
 .page > main {
 	margin-top: 1em;
-	min-height: 100vh;
 }
 
 .page > main h1 {

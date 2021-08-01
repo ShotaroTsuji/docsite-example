@@ -4,4 +4,5 @@
 	--sidebar-color: #C0E0C0;
 	--menubar-color: #90A090;
 	--menubar-button-hover: var(--sidebar-bg-color);
+	--menubar-border-color: var(--sidebar-bg-color);
 }
