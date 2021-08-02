@@ -84,6 +84,9 @@ body {
 	margin: auto;
 	max-width: 50em;
 	padding: 2em 4em;
+	hanging-punctuation: allow-end;
+	font-kerning: none;
+	font-feature-settings: "palt" 0;
 }
 
 @media screen and (max-width: 812px) {
@@ -94,4 +97,5 @@ body {
 
 .page > main h1 {
 	text-align: center;
+	font-size: 1.75em;
 }
