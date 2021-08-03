@@ -16,7 +16,7 @@ body {
 	min-height: 100vh;
 }
 
-.main {
+.wrapper {
 	min-height: 100vh;
 	display: flex;
 	flex-flow: row nowrap;
@@ -82,7 +82,7 @@ body {
 
 .page > main {
 	margin: auto;
-	max-width: 50em;
+	max-width: 40em;
 	padding: 2em 4em;
 	hanging-punctuation: allow-end;
 	font-kerning: none;
@@ -98,4 +98,9 @@ body {
 .page > main h1 {
 	text-align: center;
 	font-size: 1.75em;
+}
+
+.page footer {
+	font-style: italic;
+	font-size: 0.8em;
 }
